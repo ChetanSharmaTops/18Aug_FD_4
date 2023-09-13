@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+        div[class*="box"]{
+            width: 300px;
+            height: 300px;
+            border: 5px dashed blue;
+            margin: 10px auto;
+            color: aliceblue;
+        }
+        .box-1{
+            background-color: rgb(128, 0, 0);
+        }
+        .box-2{
+            background-color: rgb(14, 0, 95);
+        }
+        .box-3{
+            background-color: rgb(128, 0, 124);
+        }
+        .box-4{
+            background-color: teal;
+            color: khaki !important;
+        }
+        .parent{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <h1>Attribute Selector</h1>
+    <div class="parent">
+        <div class="box-1">Box-1</div>
+        <div class="box-2">Box-2</div>
+        <div class="box-3">Box-3</div>
+        <div class="box-4">Box-4</div>
+    </div>
+    <div class="parent">
+        <div class="box-1">Box-1</div>
+        <div class="box-2">Box-2</div>
+        <div class="box-3">Box-3</div>
+        <div class="box-4">Box-4</div>
+    </div>
+</body>
+</html>

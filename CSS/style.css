@@ -1,0 +1,15 @@
+   /* Selector{
+            property1: value1;
+            property2: value2;
+        } */
+
+
+
+
+.External{
+    color: blueviolet;
+}
+p{
+    color: white;
+    background-color: blueviolet;
+}
