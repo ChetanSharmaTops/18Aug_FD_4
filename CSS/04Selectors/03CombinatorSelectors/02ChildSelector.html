@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Child Selector</title>
+    <style>
+      .parent>p {
+        background-color: crimson;
+        color: aliceblue;
+      }
+      .child>p {
+        background-color: rgb(220, 20, 220);
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Child Selector (>)</h1>
+    <div class="parent">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore,
+        quisquam.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore,
+        quisquam.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore,
+        quisquam.
+      </p>
+      <div class="child">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore,
+          quisquam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore,
+          quisquam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore,
+          quisquam.
+        </p>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore,
+        quisquam.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore,
+        quisquam.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore,
+        quisquam.
+      </p>
+    </div>
+  </body>
+</html>
