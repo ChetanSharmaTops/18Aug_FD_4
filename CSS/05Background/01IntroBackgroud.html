@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Property in CSS</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      div[class*="background"] {
+        margin: 10px;
+        height: 500px;
+        color: aliceblue;
+      }
+      .background-clip {
+        border: 10px dashed crimson;
+        background-image: url(../../Images/banner1.jpg);
+        padding: 100px;
+        /* background-repeat: no-repeat; */
+        background-clip: border-box;
+        background-clip: padding-box;
+        background-clip: content-box;
+      }
+      .background-attachment {
+        border: 10px dashed crimson;
+        background-image: url(../../Images/banner1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+      .background-color {
+        border: 10px dashed crimson;
+        background-color: teal;
+      }
+      .background-image {
+        border: 10px dashed crimson;
+        background-image: url(../../Images/banner1.jpg);
+    }
+    .background-origin {
+        border: 10px dashed crimson;
+        background-image: url(../../Images/banner1.jpg);
+        padding: 100px;
+        background-repeat: no-repeat;
+        background-origin: border-box;
+        background-origin: padding-box;
+        background-origin: content-box;
+      }
+      .background-position {
+        border: 10px dashed crimson;
+        color: black !important;
+        background-image: url(../../Images/banner1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: 200px;
+        background-position: center;
+        background-position: top;
+        background-position: left;
+        background-position: right;
+        background-position: bottom;
+        background-position: 20% 50%;
+      }
+      .background-repeat {
+        border: 10px dashed crimson;
+        background-image: url(../../Images/banner1.jpg);
+        background-size: 200px;
+        background-repeat: no-repeat;
+        background-repeat: repeat;
+        background-repeat: repeat-x;
+        background-repeat: repeat-y;
+        background-repeat: round;
+        background-repeat: space;
+      }
+      .background-size {
+        border: 10px dashed crimson;
+        background-image: url(../../Images/banner1.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: cover;
+        background-size: 200px;
+        background-size: 100% 100%;
+      }
+      .background-shorthand{
+        border: 10px dashed green;
+        background: url(../../Images/banner1.jpg)no-repeat fixed border-box center center/cover;
+        background: url(../../Images/banner1.jpg)no-repeat center center/cover;
+      }
+      .background-multiple{
+        border: 10px dashed green;
+        background-image: url(../../Images/banner.jfif),url(../../Images/banner.jfif), url(../../Images/banner1.jpg);
+        background-repeat: repeat-y,repeat-x, no-repeat;
+        background-position: center;
+        background-size:  200px,200px, cover;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <h1>Background Property in CSS</h1>
+    <ul>
+      <li>background-clip</li>
+      <li>background-attachment</li>
+      <li>background-color</li>
+      <li>background-image</li>
+      <li>background-origin</li>
+      <li>background-position</li>
+      <li>background-repeat</li>
+      <li>background-size</li>
+      <li>background-shorthand</li>
+      <li>background-multiple</li>
+    </ul>
+    <hr />
+    <div class="background-clip">background-clip</div>
+    <div class="background-attachment">background-attachment</div>
+    <div class="background-color">background-color</div>
+    <div class="background-image">background-image</div>
+    <div class="background-origin">background-origin</div>
+    <div class="background-position">background-position</div>
+    <div class="background-repeat">background-repeat</div>
+    <div class="background-size">background-size</div>
+    <div class="background-shorthand">background-shorthand</div>
+    <div class="background-multiple">background-multiple</div>
+  </body>
+</html>
