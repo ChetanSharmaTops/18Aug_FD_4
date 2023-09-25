@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Margin Padding Box</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+      .margin {
+        background-color: teal;
+        color: khaki;
+        margin: 100px; /* All Four Side*/
+        margin: 100px 200px; /* Top Bottom => 100px , Right Left => 200px*/
+        margin: 100px 200px 300px; /* Top  => 100px , Right Left => 200px*, Bottom =>300px */
+        margin: 100px 200px 300px 400px; /* Top  => 100px , Right Left => 200px*, Bottom =>300px */
+      }
+      .padding {
+        background-color: teal;
+        color: khaki;
+        padding: 100px; /* All Four Side*/
+        padding: 100px 200px; /* Top Bottom => 100px , Right Left => 200px*/
+        padding: 100px 200px 300px; /* Top  => 100px , Right Left => 200px*, Bottom =>300px */
+        padding: 100px 200px 300px 400px; /* Top  => 100px , Right Left => 200px*, Bottom =>300px */
+      }
+      div[class*="box"]{
+        width: 100px;
+        height: 100px;
+        border: 10px solid red;
+        padding: 20px;
+        margin: 0 auto;
+        background-color: blueviolet;
+        color: aliceblue;
+      }
+      .content-box{
+        box-sizing: content-box;
+        /* Total width => width = 100px + padding = (20*2 = 40px) + border = (10*2 = 20px) => 160px*/
+        /* Total height => height = 100px + padding = (20*2 = 40px) + border = (10*2 = 20px) => 160px*/
+        /* box => 160 * 160 */
+
+      }
+      .border-box{
+        box-sizing: border-box;
+        /* Total width => width = 100px - padding = (20*2 = 40px) - border = (10*2 = 20px) => 40px*/
+        /* Total height => height = 100px - padding = (20*2 = 40px) - border = (10*2 = 20px) => 40px*/
+        /* box => 100 * 100 */
+      }
+      </style>
+  </head>
+  <body>
+    <div class="margin">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat qui
+      fugit cum quos pariatur molestias, iusto sed quisquam, eum aliquid libero
+      porro accusantium quo iste ad incidunt adipisci nobis consectetur?
+    </div>
+    <hr />
+    <div class="padding">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat qui
+      fugit cum quos pariatur molestias, iusto sed quisquam, eum aliquid libero
+      porro accusantium quo iste ad incidunt adipisci nobis consectetur?
+    </div>
+    <hr>
+    <h2>Box Sizing</h2>
+    <div class="content-box">content-box</div>
+    <hr>
+    <div class="border-box">border-box</div>
+  </body>
+</html>
