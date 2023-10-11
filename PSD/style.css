@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid rgb(244, 0, 0); */
+}
+#section{
+    background-color: #21243d;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.main-text{
+    padding: 50px 100px 30px;
+    margin: 0px 90px;
+}
+h2{
+    font-size: 64px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-align: center;
+}
+h2+p{
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 10px 100px;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.col-33{
+    width: 33.33%;
+}
+div[class*="circle"]{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.circle-1{
+    background: url(Images/card1.png)no-repeat center center/cover;
+}
+.circle-2{
+    background: url(Images/card2.png)no-repeat center center/cover;
+}
+.circle-3{
+    background: url(Images/card3.png)no-repeat center center/cover;
+}
+h3{
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 10px ;
+}
+h3+p{
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 10px 70px 87px;
+}
+.section-wrapper{
+    position: relative;
+    overflow-x: hidden;
+}
+img[class*="shape"]{
+    width: 150px;
+}
+.shape-1{
+    position: absolute;
+    top: -30px;
+    right: -40px;
+}
+.shape-2{
+    position: absolute;
+    bottom: 60px;
+    left: -56px;
+
+}
+img[class*="zig"]{
+    width: 80px;
+}
+.zig-1{
+    position: absolute;
+    top: 125px;
+    left: 80px;
+}
+.zig-2{
+    position: absolute;
+    bottom: 40px;
+    right: 0px;
+
+}
+img[class*="dot"]{
+    width: 80px;
+}
+.dot-1{
+    position: absolute;
+    top: -70px;
+    left: 300px;
+    transform: rotate(90deg);
+}
+.dot-2{
+    position: absolute;
+    bottom: 250px;
+    right: -20px;
+    width: 60px !important;
+
+
+}
+
+
+
+
+@media (max-width: 576px) { 
+    .row{
+        flex-direction: column;
+    }
+    .main-text{
+        margin: 0px;
+        padding: 80px 0px 50px;
+    }
+    h2+p{
+        padding: 10px 0px;
+    }
+    h3{
+        padding: 20px 0px 0px;
+    }
+    h3+p{
+        padding: 10px 0px 50px;
+    }
+    .shape-1{
+        position: absolute;
+        top: -50px;
+        right: -50px;
+    }
+    .dot-1{
+        position: absolute;
+        top: -70px;
+        left: 100px;
+        transform: rotate(90deg);
+    }
+    .zig-1{
+        position: absolute;
+        top: 265px;
+        left: 40px;
+    }
+}
