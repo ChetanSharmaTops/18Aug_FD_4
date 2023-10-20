@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    background-color: #21243d;;
+    color: white;
+    text-align: center;
+}
+.boxes{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 60px;
+}
+.main-text{
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+h1{
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+.box1{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: url(../Students/Image/box1.png) center center/cover;
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: url(../Students/Image/box2.png) center center/cover;
+}
+.box3{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: url(../Students/Image/box3.png) center center/cover;
+}
