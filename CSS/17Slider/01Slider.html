@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .slider {
+            width: 100%;
+            height: 600px;
+            background-color: #eee;
+            border: 10px solid #888;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .slide {
+            width: 100%;
+            height: 580px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            animation: fade 20s infinite;
+        }
+
+        .slide:nth-child(1) {
+            /* background-color: blue; */
+            background: url(../../Images/banner.jpg)no-repeat center center/cover;
+        }
+
+        .slide:nth-child(2) {
+            animation-delay: 5s;
+            /* background-color: rgb(255, 213, 0); */
+            background: url(../../Images/banner1.jpg)no-repeat center center/cover;
+
+
+        }
+
+        .slide:nth-child(3) {
+            animation-delay: 10s;
+            /* background-color: rgb(195, 0, 255); */
+            background: url(../../Images/banner2.avif)no-repeat center center/cover;
+
+
+        }
+
+        .slide:nth-child(4) {
+            animation-delay: 15s;
+            /* background-color: rgb(255, 0, 13); */
+            background: url(../../Images/banner3.avif)no-repeat center center/cover;
+
+
+        }
+
+        @keyframes fade {
+            0% {
+                opacity: 0;
+            }
+
+            5% {
+                opacity: 1;
+            }
+
+            25% {
+                opacity: 1;
+            }
+
+            30% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider">
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+    </div>
+</body>
+
+</html>
