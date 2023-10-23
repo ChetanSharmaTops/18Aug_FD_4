@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient In CSS</title>
+    <style>
+        section{
+            height: 100vh;
+            background: linear-gradient(39deg, rgba(159,33,170,1) 30%, rgba(71,193,148,1) 70%, rgba(0,212,255,1) 100%);
+        }
+        .linear-gradient{
+            height: 100px;
+            background: linear-gradient( red, blue , yellow, green);
+            background: linear-gradient(30deg, red, blue , yellow, green);
+        }
+        .radial-gradient{
+            height: 200px;
+            width: 200px;
+            margin: auto;
+            border-radius: 50%;
+            background: radial-gradient(rgb(204, 0, 255), rgb(19, 0, 128), rgb(221, 0, 255));
+        }
+        .conic-gradient{
+            height: 200px;
+            width: 200px;
+            margin: auto;
+            border-radius: 50%;
+            background: conic-gradient(rgb(204, 0, 255), rgb(38, 2, 240), rgb(255, 0, 76));
+
+        }
+        button{
+            margin: 50px ;
+            padding: 10px 30px;
+            color: aliceblue;
+            font-size: 30px;
+            background-color: thistle;
+            /* transition: font-size 4s 1s; */
+            
+            
+        }
+        button:hover{
+            /* font-size: 50px; */
+            background: linear-gradient(39deg, rgba(159,33,170,1) 30%, rgba(188,71,193,1) 48%, rgba(0,212,255,1) 100%);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="linear-gradient"></div>
+    <hr>
+    <div class="radial-gradient"></div>
+    <hr>
+    <div class="conic-gradient"></div>
+    <hr>
+    <button>Click Me</button>
+    <hr>
+    <section>
+    </section>
+
+</body>
+</html>
