@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Media Query</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* border: 1px solid black; */
+        color: aliceblue;
+      }
+      .section-wrapper{
+        padding-bottom: 50px;
+      }
+      #section {
+        background-color: rgb(119, 9, 245);
+      }
+      #section-1 {
+        background-color: rgb(249, 15, 241);
+      }
+      #section-2 {
+        background-color: rgb(245, 6, 90);
+      }
+      .container {
+        width: 90%;
+        margin: 0 auto;
+      }
+      h1 {
+        font-size: 50px;
+      }
+      h1 + p {
+        font-size: 30px;
+        padding-top: 20px;
+      }
+      img {
+        width: 100%;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+      }
+      h3 {
+        font-size: 35px;
+      }
+      h3 + p {
+        font-size: 20px;
+        padding-top: 20px;
+      }
+      h2 {
+        font-size: 40px;
+      }
+      h2 + p {
+        font-size: 25px;
+        padding-top: 20px;
+      }
+      .sub-text {
+        text-align: center;
+      }
+      .main-text {
+        text-align: center;
+        padding: 50px;
+      }
+      .col-50 {
+        width: 50%;
+      }
+      .col-33 {
+        width: 33.33%;
+      }
+      .col-25 {
+        width: 25%;
+      }
+
+      /* Media Query  */
+
+
+      @media (max-width: 992px) {
+        .row{
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .col-50 {
+          width: 48%;
+        }
+        .col-33 {
+          width: 48%;
+        }
+        .col-25 {
+          width: 48%;
+        }
+      }
+      @media (max-width: 768px) {
+        .row{
+            flex-direction: column;
+        }
+        .col-50 {
+          width: 100%;
+        }
+        .col-33 {
+          width: 100%;
+        }
+        .col-25 {
+          width: 100%;
+        }
+      }
+      @media (max-width: 576px) {
+        .row{
+            flex-direction: column;
+        }
+        .col-50 {
+          width: 100%;
+        }
+        .col-33 {
+          width: 100%;
+        }
+        .col-25 {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Section col-50 -->
+
+    <section id="section">
+      <div class="section-wrapper">
+        <div class="container">
+          <div class="main-text">
+            <h1>Heading</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem neque expedita eos fuga, ducimus accusantium.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-50">
+              <img src="../../Images/banner1.jpg" alt="" />
+            </div>
+            <div class="col-50">
+              <div class="sub-text">
+                <h3>Sub-Heading</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusantium, enim.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Section col-33 -->
+
+    <section id="section-1">
+      <div class="section-wrapper">
+        <div class="container">
+          <div class="main-text">
+            <h2>Heading</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem neque expedita eos fuga, ducimus accusantium.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-33">
+              <img src="../../Images/banner1.jpg" alt="" />
+            </div>
+            <div class="col-33">
+              <div class="sub-text">
+                <h3>Sub-Heading</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusantium, enim.
+                </p>
+              </div>
+            </div>
+            <div class="col-33">
+              <img src="../../Images/banner1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Next Section col-25 -->
+
+    <section id="section-2">
+      <div class="section-wrapper">
+        <div class="container">
+          <div class="main-text">
+            <h2>Heading</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem neque expedita eos fuga, ducimus accusantium.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <img src="../../Images/banner1.jpg" alt="" />
+            </div>
+            <div class="col-25">
+              <div class="sub-text">
+                <h3>Sub-Heading</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusantium, enim.
+                </p>
+              </div>
+            </div>
+            <div class="col-25">
+              <img src="../../Images/banner1.jpg" alt="" />
+            </div>
+            <div class="col-25">
+              <div class="sub-text">
+                <h3>Sub-Heading</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusantium, enim.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
