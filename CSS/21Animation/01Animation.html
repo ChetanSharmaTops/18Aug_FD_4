@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation In CSS</title>
+    <style>
+        /* .box{
+            width: 200px;
+
+        } */
+        h2{
+            font-size: 30px;
+            color: crimson;
+            animation-name: paragraph;
+            animation-duration: 5s;
+            /* animation-iteration-count: 2; */
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes paragraph {
+            from{
+                margin-left: 0px;
+            }
+            to{
+                margin-left: 500px;
+            }
+
+
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 3px solid blueviolet;
+            background-color: teal;
+            animation-name: boxMove;
+            animation-duration: 2s;
+            /* animation-iteration-count: 2; */
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-timing-function: linear;
+            animation-timing-function: ease-in-out;
+
+        }
+        @keyframes boxMove {
+            from{
+                margin-top: 50px;
+                margin-left: 10px;
+            }
+            to{
+                margin-left: 1100px;
+                margin-top: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Animation In CSS</h2>
+    <div class="box"></div>
+</body>
+</html>
