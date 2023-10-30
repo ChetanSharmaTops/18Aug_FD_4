@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        background-color: crimson;
+        color: aliceblue;
+        font-size: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+      }
+      .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      li {
+        list-style-type: none;
+        padding: 0px 30px;
+      }
+      h3 {
+        display: none;
+      }
+      .container {
+        width: 90%;
+        margin: auto;
+      }
+      main {
+        background-color: teal;
+        color: khaki;
+        padding: 50px;
+      }
+      .main-text {
+        text-align: center;
+        padding: 50px;
+      }
+      h1 {
+        font-size: 80px;
+      }
+      h1+p {
+        font-size: 40px;
+        padding: 20px 0px 80px;
+      }
+
+      /* section start  */
+
+      #section{
+        background-color: thistle;
+      }
+      h2{
+        font-size: 60px;
+      }
+      h2+p{
+        font-size: 35px;
+      }
+      .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .col-33{
+        width: 33.33%;
+      }
+      .box{
+        border: 3px dashed yellow;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+      }
+      img{
+        width: 100%;
+      }
+      h4{
+        font-size: 30px;
+        padding: 10px;
+      }
+      h4+p{
+        font-size: 15px;
+        padding: 0px 0px 20px;
+      }
+      .section-wrapper{
+        padding: 50px 0px;
+      }
+      /* Media Query  */
+
+      @media (max-width: 576px) {
+        .nav-menu {
+          display: none;
+        }
+        h3 {
+          display: block;
+        }
+        .main-text {
+          padding: 0px;
+        }
+        main {
+          padding: 50px 0px;
+        }
+        p {
+          padding: 20px 0px 50px;
+        }
+        .row{
+          gap: 30px;
+
+        }
+        .col-33{
+        width: 100%;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-wrapper">
+        <nav>
+          <div class="logo">
+            <h2>Logo</h2>
+          </div>
+          <ul class="nav-menu">
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+          </ul>
+          <h3>Bars</h3>
+        </nav>
+        <main>
+          <div class="container">
+            <div class="main-text">
+              <h1>Heading</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                repellendus aliquam in quidem qui vero dicta, asperiores facere
+                vel porro!
+              </p>
+            </div>
+          </div>
+        </main>
+      </div>
+    </header>
+
+    <!-- Header Complete -->
+
+    <!-- section start  -->
+
+    <section id="section">
+      <div class="section-wrapper">
+        <div class="container">
+          <div class="main-text">
+            <h2>Sub-heading</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic
+              eaque eos aliquam non magni distinctio.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-33">
+              <div class="box">
+                <div class="image">
+                  <img src="../Images/nike.jfif" alt="">
+                </div>
+                <h4>Title</h4>
+                <p>$340</p>
+              </div>
+            </div>
+            <div class="col-33">
+              <div class="box">
+                <div class="image">
+                  <img src="../Images/nike.jfif" alt="">
+                </div>
+                <h4>Title</h4>
+                <p>$340</p>
+              </div>
+            </div>
+            <div class="col-33">
+              <div class="box">
+                <div class="image">
+                  <img src="../Images/nike.jfif" alt="">
+                </div>
+                <h4>Title</h4>
+                <p>$340</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

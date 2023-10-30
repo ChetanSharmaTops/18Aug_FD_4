@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clip Path</title>
+    <style>
+      .arrow {
+        height: 200px;
+        background-color: blueviolet;
+
+        clip-path: polygon(
+          0% 20%,
+          60% 20%,
+          60% 0%,
+          100% 50%,
+          60% 100%,
+          60% 80%,
+          0% 80%
+        );
+      }
+      .clip{
+        height: 500px;
+        background: url(../Images/banner1.jpg)no-repeat center center/cover;
+        clip-path: polygon(100% 99%, 100% 48%, 100% 1%, 44% 0%, 0% 1%, 0% 46%, 0 89%);
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="arrow"></div>
+
+    <div class="clip"></div>
+  </body>
+</html>
