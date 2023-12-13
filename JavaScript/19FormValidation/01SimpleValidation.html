@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Simple Validation</title>
+</head>
+<body>
+    <h1>Form Simple Validation</h1>
+
+    <hr>
+
+    <input type="text" name="uname" id="uname" onblur="checkValidName()">
+    <span id="error1"></span>
+     <br> <br>
+    <input type="text" name="upass" id="upass" onblur="checkValidPassword()">
+    <span id="error2"></span> 
+    <br> <br>
+    <input type="text" name="uemail" id="uemail" onblur="checkValidEmail()">
+    <span id="error3"></span>
+     <br> <br>
+    <input type="text" name="umobile" id="umobile" onblur="checkValidMobile()">
+    <span id="error4"></span>
+
+
+
+    <script>
+        
+        function checkValidName() {
+            let userName = document.getElementById("uname").value
+          if (userName == '') {
+            console.log('Please Enter Valid User Name');
+            document.getElementById("error1").innerText = "Please Enter Valid User Name" 
+            document.getElementById("error1").style.color = "red" 
+          } else {
+            console.log('Valid User Name');
+            document.getElementById("error1").innerText = ""             
+          }
+        }
+        function checkValidPassword() {
+            let userPass = document.getElementById("upass").value
+          if (userPass == '') {
+            document.getElementById("error2").innerText = "Please Enter Valid User Password" 
+            document.getElementById("error2").style.color = "red" 
+          } else {
+            document.getElementById("error2").innerText = ""             
+          }
+        }
+
+        function checkValidEmail() {
+            let userEmail = document.getElementById("uemail").value
+          if (userEmail == '') {
+            document.getElementById("error3").innerText = "Please Enter Valid User Email" 
+            document.getElementById("error3").style.color = "red" 
+          } else {
+            document.getElementById("error3").innerText = ""             
+          }
+        }
+
+        function checkValidMobile() {
+            let userMobile = document.getElementById("umobile").value
+          if (userMobile == '') {
+            document.getElementById("error4").innerText = "Please Enter Valid User Mobile" 
+            document.getElementById("error4").style.color = "red" 
+          } else {
+            document.getElementById("error4").innerText = ""             
+          }
+        }
+    </script>
+</body>
+</html>
