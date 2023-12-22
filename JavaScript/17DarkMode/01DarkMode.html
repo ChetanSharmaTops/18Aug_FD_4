@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Mode</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    
+        </style>
+  </head>
+  <body id="body" >
+    <button onclick="darkMode()" id="dark">Dark Mode</button>
+    <button onclick="lightMode()" id="light">light Mode</button>
+    <h1>Helllllooooo Dark Mode</h1>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, eaque!
+      Dolor consectetur ad dolorem est amet facere aliquid blanditiis natus
+      perspiciatis recusandae eius obcaecati, temporibus tempore similique
+      quisquam consequatur molestiae!
+    </p>
+
+    <script>
+        // let a = document.getElementById('body').style.backgroundColor = 'red'
+        
+
+        // function darkMode() {
+        //         document.getElementById('body').style.backgroundColor = 'grey'
+        //         document.getElementById('body').style.color = 'white'
+        //         document.getElementById('dark').style.display = 'none'
+        //         document.getElementById('light').style.display = 'block'
+
+           
+        // }
+        // function lightMode() {
+        //         document.getElementById('body').style.backgroundColor = 'white'
+        //         document.getElementById('body').style.color = 'black'
+        //         document.getElementById('light').style.display = 'none'
+        //         document.getElementById('dark').style.display = 'block'
+
+           
+        // }
+
+        let a = document.getElementById('body')
+
+        let isColor = true
+        function darkMode() {
+            if (isColor) {
+                a.style.backgroundColor = 'black'
+                a.style.color = 'white'
+            }
+            else{
+                a.style.backgroundColor = 'white'
+                a.style.color = 'black'
+            }
+            isColor =! isColor
+        }
+
+
+
+
+
+        
+    </script>
+  </body>
+</html>
