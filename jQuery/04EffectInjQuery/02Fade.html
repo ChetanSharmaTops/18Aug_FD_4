@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fade Effect In jQuery</title>
+  </head>
+  <body>
+    <h1>Fade Effect In jQuery</h1>
+    <hr />
+    <button class="btnFadeIn">Fade In</button>
+    <button class="btnFadeOut">Fade Out</button>
+    <button class="btnFadeToggle">Fade Toggle</button>
+    <button class="btnFadeTo">Fade To</button>
+    <button class="btnFadeToToggle">Fade To Toggle</button>
+    <hr />
+    <div class="box">You Wanna See Some Magic In jQuery</div>
+
+    <!-- jquery added here  -->
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <!-- script CSS added here  -->
+
+    <script>
+      $("*").css({
+        margin: "0",
+        padding: "0",
+        boxSizing: "border-box",
+      });
+      $("body").css({
+        backgroundColor: "tan",
+        textAlign: "center",
+      });
+      $("h1").css({
+        color: "brown",
+        textAlign: "center",
+        fontSize: "50px",
+      });
+      $("button").css({
+        backgroundColor: "brown",
+        color: "khaki",
+        padding: "10px 20px",
+        margin: "10px",
+        fontSize: "25px",
+      });
+      $(".box").css({
+        backgroundColor: "crimson",
+        color: "khaki",
+        padding: "10px",
+        margin: "10px",
+        height: "300px",
+        border: "10px solid blue",
+        outline: "10px dashed green",
+        fontSize: "25px",
+      });
+    </script>
+
+    <!-- script jquery written added here  -->
+
+    <script>
+        $(document).ready(function () {
+
+
+            // fadeIn 
+            
+            $('.btnFadeIn').click(function () {
+                $('.box').fadeIn(3000)
+            })
+
+            // fadeOut 
+
+            $('.btnFadeOut').click(function () {
+                $('.box').fadeOut(2000)
+            })
+
+            // fadeToggle 
+
+            $('.btnFadeToggle').click(function () {
+                $('.box').fadeToggle(2500)
+            })
+
+            // fadeTo  Toggle
+
+            $('.btnFadeToToggle').click(function () {
+
+                $('.box').fadeTo(2000, 0.5)
+            })
+        })
+        
+    </script>
+  </body>
+</html>
