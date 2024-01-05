@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery CSS</title>
+
+
+</head>
+<body>
+    <h1>jQuery CSS</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, accusantium!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, accusantium!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, accusantium!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, accusantium!</p>
+
+
+    <!-- jquery script  -->
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+
+    <!-- script  -->
+
+    <script>
+
+
+        $(document).ready(function () {
+
+            // Method 1 
+           
+            $('body').css('backgroundColor', 'blue')
+
+
+            // Method 2 
+           
+            $('body').css({'backgroundColor': 'blue', 'color': 'white'})
+
+
+            // Method 3 
+           
+            $('body').css({backgroundColor: 'blue', color: 'white', fontSize: '30px'})
+            
+
+
+        });
+
+    </script>
+</body>
+</html>

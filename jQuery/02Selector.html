@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector In jQuery</title>
+  </head>
+  <body>
+    <h1>Selector In jQuery</h1>
+    <hr>
+    <h2 id="unique">Hello I,m unique</h2>
+    <hr>
+    <h3 class="same">Hello I,m Same</h3>
+    <h3 class="same">Hello I,m Same</h3>
+    <hr>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+      // Selector In jQuery
+
+      $(document).ready(function () {
+        // Element Selector
+
+        $("h1").click(function () {
+          console.log("Element Selector is Called");
+        });
+
+        // Id Selector
+
+        $("#unique").click(function () {
+          console.log("ID Selector is Called");
+        });
+
+        // Class Selector
+
+        $(".same").click(function () {
+          console.log("Class Selector is Called");
+        });
+
+        // this Selector
+
+        $("p").click(function () {
+            $(this).css('color', 'red')
+          console.log("Color will change when we click on any particular p tag (as we used 'this' keyword) is Called");
+        });
+      });
+    </script>
+  </body>
+</html>

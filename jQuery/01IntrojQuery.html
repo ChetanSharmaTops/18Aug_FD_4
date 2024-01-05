@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction To JQuery</title>
+ 
+  </head>
+  <body>
+    <h1>Introduction To JQuery</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta,
+      voluptates.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta,
+      voluptates.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta,
+      voluptates.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta,
+      voluptates.
+    </p>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script> -->
+    <script>
+      // console.log(jQuery);
+      // console.log($);
+
+      // Syntax
+
+      // $(Selector).action(function () {
+      // //    do something
+      // // this code will be executed
+      // });
+
+      // $('h1').click(function () {
+      //     $('p').hide()
+      //     console.log('Called');
+      // })
+
+      $(document).ready(function () {
+        // $(function () {
+
+        $("h1").click(function () {
+          console.log("Called");
+        });
+      });
+    </script>
+  </body>
+</html>

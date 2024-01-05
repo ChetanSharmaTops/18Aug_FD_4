@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append Child</title>
+</head>
+<body>
+    <button onclick="addPara()">When we click on this p element will append dynamically</button>
+    <div id="heading">Append Child Dynamically</div>
+  
+
+
+    <script>
+        function addPara(){
+            let node = document.createElement('p');
+            let textNode = document.createTextNode('This is the Magic Of JavaScript.')
+            node.appendChild(textNode)
+            document.getElementById('heading').appendChild(node)
+        }
+    </script>
+</body>
+</html>

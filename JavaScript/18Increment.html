@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Increment</title>
+  </head>
+  <body id="body">
+    <button onclick="countIncrement()">Increment</button>
+    <button onclick="countDecrement()">Decrement</button>
+    <script>
+      let i = -1;
+      let marks = ["red", "green", 'blue', 'orange', 'yellow', 'crimson'];
+      //   console.log(marks);
+      function countIncrement() {
+        if (i < marks.length - 1) {
+          i++;
+          // console.log(i);
+          let a = document.getElementById("body");
+          a.style.backgroundColor = marks[i];
+          console.log(marks[i]);
+        }
+      }
+
+      let j = marks.length - 1;
+      function countDecrement() {
+        if (j > 0) {
+          j--;
+          let a = document.getElementById("body");
+          a.style.backgroundColor = marks[j];
+          console.log(marks[j]);
+        }
+      }
+    </script>
+  </body>
+</html>
