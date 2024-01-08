@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Key Event</title>
+
+    <style>
+        :root{
+            --frank: rgb(255, 0, 204);
+        }
+        h1{
+            color: var(--frank);
+        }        
+    </style>
+  </head>
+  <body>
+    <h1>Helllo frankkk</h1>
+    <input type="text">
+    <div class="box">This is The Magic of jQuery</div>
+
+    <!-- jquery -->
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <!-- script CSS  -->
+
+    <script>
+      $("*").css({
+        margin: "0",
+        padding: "0",
+        boxSizing: "border-box",
+      });
+      $(".box").css({
+        backgroundColor: "crimson",
+        color: "white",
+        padding: "10px",
+        margin: "10px",
+        height: "200px",
+        border: "10px solid blue",
+        outline: "10px dashed green",
+        fontSize: "25px",
+        textAlign: "center",
+      });
+    </script>
+
+
+    <!-- script -->
+
+    <script>
+        $(document).ready(function () {
+
+            // Key Up
+
+            $('input').keyup(function () {
+                $('.box').css({backgroundColor: 'blue', color:'white'})
+            })
+
+            // Key down 
+
+            $('input').keydown(function () {
+                $('.box').css({backgroundColor: 'brown', color:'khaki'})
+            })
+
+
+            // key press 
+
+            // $('input').keypress(function () {
+            //     $('.box').css({backgroundColor: 'black', color:'khaki'})
+            // })
+
+          
+
+        });
+
+    
+    </script>
+  </body>
+</html>

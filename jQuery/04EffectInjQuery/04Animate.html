@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animate in jQuery</title>
+  </head>
+  <body>
+    <h1>Animate in jQuery</h1>
+    <button class="btnAnimate">Animate</button>
+    <div class="box">This is The Magic of jQuery</div>
+
+    <!-- jQuery -->
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <!-- script CSS added here  -->
+
+    <script>
+      $("*").css({
+        margin: "0",
+        padding: "0",
+        boxSizing: "border-box",
+      });
+      $("body").css({
+        backgroundColor: "tan",
+      });
+      $("h1").css({
+        color: "brown",
+        textAlign: "center",
+        fontSize: "50px",
+      });
+      $("button").css({
+        backgroundColor: "brown",
+        color: "khaki",
+        padding: "10px 20px",
+        margin: "10px",
+        fontSize: "25px",
+      });
+      $(".box").css({
+        backgroundColor: "crimson",
+        color: "khaki",
+        padding: "10px",
+        margin: "10px",
+        height: "300px",
+        width: "300px",
+        border: "10px solid blue",
+        outline: "10px dashed green",
+        fontSize: "25px",
+      });
+    </script>
+
+    <!-- Script  -->
+
+    <script>
+      $(document).ready(function () {
+        $(".btnAnimate").click(function () {
+          $(".box").animate({ height: "200px", marginLeft: "400px" }, 2000);
+        });
+        $(".box").hover(function () {
+          $(".box").css({ backgroundColor: "green" });
+        });
+        $("h1").hover(function () {
+          $(".box").css({ backgroundColor: "blue" });
+        });
+      });
+    </script>
+  </body>
+</html>
