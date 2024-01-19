@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Ancestor Traversing</title>
+</head>
+<body>
+body
+    <div class="great-grand-parent">
+        great-grand-parent
+        <div class="grand-parent">
+            grand-parent
+            <div class="parent">
+                parent
+                <div class="child">Child 1</div>
+                <div class="child">Child 2</div>
+            </div>
+        </div>
+    </div>
+
+
+
+   <!-- jquery -->
+
+   <script src="../js/jquery-3.7.1.min.js"></script>
+
+   <!-- script CSS  -->
+
+   <script>
+     $("*").css({
+       margin: "20px",
+       boxSizing: "border-box",
+       fontSize: '30px'
+     });
+     $("body").css({
+       backgroundColor: "tan",
+       textAlign: "center",
+     });
+     $("button").css({
+       backgroundColor: "crimson",
+       color: "white",
+       padding: "10px 30px",
+       margin: "10px",
+       borderRadius: "10px",
+       fontSize: "25px",
+       textAlign: "center",
+     });
+   </script>
+
+   <!-- script -->
+
+   <script>
+     $(document).ready(function () {
+
+            // Parent 
+
+           $('.child').parent().css({border: '3px solid lime'})
+           $('.parent').parent().css({border: '3px solid blue'})
+           $('.grand-parent').parent().css({border: '3px solid brown'})
+           $('.great-grand-parent').parent().css({border: '3px solid black'})
+
+            // Parents 
+
+        //    $('.child').parents().css({border: '3px solid lime'})
+        //    $('.parent').parents().css({border: '3px solid blue'})
+        //    $('.grand-parent').parents().css({border: '3px solid brown'})
+        //    $('.great-grand-parent').parents().css({border: '3px solid black'})
+
+            // ParentUntil
+
+        //    $('.child').parentsUntil('.grand-parent').css({border: '3px solid lime'})
+        //    $('.parent').parentsUntil('.great-grand-parent').css({border: '3px solid blue'})
+        //    $('.grand-parent').parentsUntil('body').css({border: '3px solid brown'})
+        //    $('.great-grand-parent').parentsUntil('html').css({border: '3px solid black'})
+      
+
+     });
+   </script>
+</body>
+</html>
