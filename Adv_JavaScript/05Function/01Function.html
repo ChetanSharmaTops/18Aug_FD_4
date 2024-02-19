@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function In JS</title>
+  </head>
+  <body>
+    <h1>Function In JS</h1>
+    <p>
+      Functions are the main “building blocks” of the program. They allow the
+      code to be called many times without repetition.
+    </p>
+    <p>Functions Are The Heart Of JavaScript.</p>
+    <!-- <p>Functions Are Treated As First Class Citizens In JavaScript.</p> -->
+
+    <script>
+      // Function Declaration
+
+      // function greet() {
+      //     console.log('Namaste Bharat');
+      // }
+      // greet()
+      // greet()
+      // greet()
+      // greet()
+      // greet()
+      // greet()
+
+      // Local variables
+
+      // A variable declared inside a function is only visible inside that function.
+
+      // function local() {
+      //     let a = 10
+      //     console.log(a);
+      // }
+      // local()
+
+      // Outer variables
+
+      // A function can access an outer variable as well,
+
+      // let a = 10
+      // function outer() {
+      //     console.log(a);
+      // }
+      // outer()
+
+      // Parameters
+
+      // while Declaring a function we pass some parameter in the parenthesis (para1, para2)
+
+      // function twoNumber(a, b) {
+      //     console.log(a + b);
+      //     console.log(a - b);
+      //     console.log(a * b);
+      //     console.log(a / b);
+      // }
+
+      // while Calling a function we pass some Arguments in the parenthesis (arg1, arg2)
+
+      // twoNumber(4,5)
+      // twoNumber(6,5)
+      // twoNumber(8,5)
+      // twoNumber(2,5)
+
+      // Default values
+
+      // If a function is called, but an argument is not provided,
+      // then the corresponding value becomes undefined.
+
+      //  function twoNumber(a, b=10) {
+      //     console.log(a + b);
+      //     console.log(b);
+      //     console.log(a);
+
+      // }
+
+      // twoNumber(4)
+      // twoNumber(4, 5)
+
+      // Alternative default parameters
+
+      //   function showMessage(form, text) {
+
+      //     if (text === undefined) {
+      //       // if the parameter is missing
+      //       text = "empty message";
+      //     }
+
+      //     alert(form + ': ' + text);
+      //   }
+
+      //   showMessage('Hello', 'Max');
+
+
+
+    //   Return 
+
+    // function heyReturn() {
+    //     console.log('Before');
+    //     return console.log('hello return');
+    //     console.log('After');
+    // }
+    // heyReturn()
+
+
+    //   Anonymous Function  / Function Expressions 
+
+    // function () {
+    //     console.log('Hello');
+    // }
+    // SyntaxError: Function statements require a function name 
+
+
+    // const greet = function () {
+    //     console.log('Hello');
+    // }
+    // greet()
+
+
+
+    // Function Decalration is Hoisted but Function Expressions are not Hoisted 
+
+
+
+    </script>
+  </body>
+</html>

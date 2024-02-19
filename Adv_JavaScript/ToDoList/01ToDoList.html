@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+</head>
+<body>
+    <h1>To Do List</h1>
+    <input type="text" id="data">
+    <button id="btn" onclick="handleAddElement()">Add</button>
+    <div id="box"></div>
+
+
+    <script>
+        let inpData = document.querySelector('#data')
+        let btnAdd = document.querySelector('#btn')
+
+        function handleAddElement() {
+            console.log(inpData);
+            console.log(inpData.value);
+            let node = document.createElement('p')
+            let text = `<tr>${inpData.value}</tr>`
+            let textNode = document.createTextNode(text)
+            node.appendChild(textNode)
+            document.getElementById('box').appendChild(node)
+
+
+        }
+
+    </script>
+</body>
+</html>
