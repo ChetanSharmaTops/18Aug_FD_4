@@ -11,5 +11,71 @@
       A higher order function is a function that takes one or more functions as
       arguments, or returns a function as its result.
     </p>
+
+    <script>
+      // function ask(question, yes, no) {    // Higher Order Function
+      //   if (confirm(question)) {
+      //     yes();
+      //   } else {
+      //     no();
+      //   }
+      // }
+
+      // function yes() {                   // Callback Function
+      //   console.log("yes");
+      // }
+      // function no() {                     // Callback Function
+      //   console.log("No");
+      // }
+
+      // ask("Today is Holiday", yes, no);
+
+      // function sumTwoNumber(a, b) {
+      //   console.log(a+b);
+      // }
+      // function subTwoNumber(a, b) {
+      //   console.log(a-b);
+      // }
+      // function mulTwoNumber(a, b) {
+      //   console.log(a*b);
+      // }
+
+      // Find out the Area, Diameter and Circumference
+
+      let radius = [1, 2, 3, 4];
+
+      const areaOfCircle = function () {
+        let output = [];
+        for (let i = 0; i < radius.length; i++) {
+          output.push(Math.PI * radius[i] * radius[i]);
+        }
+        console.log(output);
+      };
+
+      areaOfCircle();
+
+      
+
+      const circumferenceOfCircle = function () {
+        let output = [];
+        for (let i = 0; i < radius.length; i++) {
+          output.push(2* Math.PI * radius[i]);
+        }
+        console.log(output);
+      };
+
+      circumferenceOfCircle();
+
+
+      const diameterOfCircle = function () {
+        let output = [];
+        for (let i = 0; i < radius.length; i++) {
+          output.push(2 * radius[i]);
+        }
+        console.log(output);
+      };
+
+      diameterOfCircle();
+    </script>
   </body>
 </html>
